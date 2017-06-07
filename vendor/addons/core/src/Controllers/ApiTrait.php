@@ -171,7 +171,7 @@ trait ApiTrait {
 		$paginate = $this->_getPaginate($request, $builder, $columns);
 
 		if (!empty($callback) && is_callable($callback))
-			call_user_func_array($callback, [$paginate]); //reference Objecy
+			call_user_func_array($callback, [&$paginate]); //reference Objecy
 
 		return $paginate->toArray() + ['filters' => $paginate->filters, 'queries' => $paginate->queries, 'orders' => $paginate->orders];
 	}

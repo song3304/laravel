@@ -4,6 +4,8 @@ namespace Addons\Core\Http;
 use Addons\Core\Http\OutputResponse;
 use Addons\Core\Tools\OutputEncrypt;
 use Addons\Core\Tools\Office;
+use Symfony\Component\HttpFoundation\Request;
+use Addons\Core\File\Mimes;
 
 class OfficeResponse extends OutputResponse {
 

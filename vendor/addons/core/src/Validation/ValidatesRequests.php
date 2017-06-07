@@ -83,7 +83,7 @@ trait ValidatesRequests
 		if ($validator->fails())
 			$this->throwValidationException($request, $validator);
 
-		return $this->filterValidatorData($validator, $keys);;
+		return $this->filterValidatorData($validator, $keys);
 	}
 	/**
 	 * [validateWithApi description]
